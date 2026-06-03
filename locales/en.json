@@ -47,7 +47,7 @@
     "titleHighlight": "Frontend Engineer",
     "p1": "I am a Frontend Developer focused on enterprise energy software at Ratio Energy, where I ship customer-facing products that operators and engineers rely on daily — including Ratio EMS and RatioSIM.",
     "p2": "My work spans complex dashboards, SCADA diagram editors, facility configuration tools, simulation result views, and trading workflows. I prioritize type-safe React architectures, predictable state management, and interfaces that stay responsive under high-frequency telemetry.",
-    "p3": "I collaborate closely with backend, product, and domain experts to translate EMS and simulation requirements into maintainable UI modules, bilingual (TR/EN) experiences, and accessible patterns for long operational sessions.",
+    "p3": "I collaborate closely with backend, product, and domain experts to translate EMS and simulation requirements into maintainable UI modules, bilingual experiences, and accessible patterns for long operational sessions.",
     "experience": [
       "Own end-to-end frontend delivery for Ratio EMS modules: SCADA editor, facility editor, dashboards, mobile views, and trading screens.",
       "Implement real-time monitoring with WebSocket streams, live charts, and resilient reconnection UX for SCADA and telemetry data.",
@@ -105,7 +105,7 @@
           "EMS workflows",
           "Facility modeling",
           "Simulation UX",
-          "i18n (TR/EN)",
+          "i18n",
           "Role-based UX"
         ]
       }
@@ -206,7 +206,7 @@
         "highlights": [
           "Structured the React + TypeScript codebase around feature modules and shared design tokens.",
           "Integrated WebSocket channels for live SCADA and alarm updates with graceful degradation.",
-          "Delivered bilingual TR/EN interfaces with scalable i18n patterns.",
+          "Delivered bilingual interfaces with scalable i18n patterns.",
           "Optimized bundle size and render performance for data-heavy operator screens."
         ],
         "outcome": "A stable EMS client adopted by operators for daily monitoring, with faster feature delivery through reusable UI foundations."

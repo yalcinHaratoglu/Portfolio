@@ -47,7 +47,7 @@
     "titleHighlight": "Frontend Uzmanlığı",
     "p1": "Ratio Energy'de Ratio EMS ve RatioSIM enerji yazılımlarının frontend'ini uçtan uca geliştiren bir frontend geliştiriciyim. Karmaşık teknik alanları sezgisel, performanslı ve ölçeklenebilir arayüzlere dönüştürmeye odaklanıyorum.",
     "p2": "WebSocket tabanlı gerçek zamanlı altyapı, SCADA tek hat diyagram editörleri, izometrik tesis editörleri, sürükle-bırak dashboard motorları ve React Native mobil uygulamalar üzerinde çalıştım. İnşaat mühendisliği ve üretim yönetimi geçmişim, teknik domainleri hızla kavramamı sağlıyor.",
-    "p3": "TypeScript strict typing, Playwright E2E testleri ve Storybook ile kod kalitesine önem veriyorum. TR/EN çok dilli deneyimler sunarak kurumsal müşterilere ürün odaklı çözümler geliştiriyorum.",
+    "p3": "TypeScript strict typing, Playwright E2E testleri ve Storybook ile kod kalitesine önem veriyorum. Çok dilli deneyimler sunarak kurumsal müşterilere ürün odaklı çözümler geliştiriyorum.",
     "experience": [
       "Ratio Energy'de RatioSIM ve Ratio EMS enerji yazılımlarının frontend mimarisini ve modüllerini uçtan uca geliştirdim.",
       "Web Worker tabanlı WebSocket altyapısı, SCADA tek hat editörü ve Babylon.js destekli izometrik tesis editörü tasarladım.",
@@ -250,7 +250,7 @@
           "Ürün ailesi vitrini: RatioSIM, Ratio EMS ve TradeOpt tanıtım sayfaları",
           "Kurumsal müşteri referansları ve sektör liderleri bölümü",
           "Responsive tasarım ve modern kurumsal görsel dil",
-          "TR/EN çok dilli içerik desteği"
+          "Çok dilli içerik desteği"
         ],
         "outcome": "Ratio Energy'nin dijital vitrini olarak yatırımcı ve EPC firmalarına ulaşan profesyonel bir kurumsal web deneyimi oluşturdum."
       },
