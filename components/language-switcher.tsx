@@ -2,14 +2,14 @@
 
 import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
-import GB from "country-flag-icons/react/3x2/GB"
-import TR from "country-flag-icons/react/3x2/TR"
 import { Check, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { persistClientLocale, type Locale } from "@/lib/locale"
+import { CountryFlag, type CountryCode } from "@/components/country-flag"
 
-const LANGUAGES = [
-  { code: "en" as const, Flag: GB, labelKey: "language.en" },
-  { code: "tr" as const, Flag: TR, labelKey: "language.tr" },
+const LANGUAGES: { code: "en" | "tr"; flag: CountryCode; labelKey: string }[] = [
+  { code: "en", flag: "GB", labelKey: "language.en" },
+  { code: "tr", flag: "TR", labelKey: "language.tr" },
 ]
 
 type LanguageSwitcherProps = {
@@ -25,7 +25,6 @@ export function LanguageSwitcher({ compact = false, dropdownPlacement = "bottom"
 
   const currentLang = i18n.language?.startsWith("tr") ? "tr" : "en"
   const current = LANGUAGES.find((l) => l.code === currentLang) ?? LANGUAGES[0]
-  const CurrentFlag = current.Flag
 
   useEffect(() => {
     setMounted(true)
@@ -82,7 +81,7 @@ export function LanguageSwitcher({ compact = false, dropdownPlacement = "bottom"
             : "h-10 min-w-[5.25rem] gap-2 rounded-md px-3",
         )}
       >
-        <CurrentFlag className={cn("shrink-0 rounded-sm", compact ? "h-4 w-6" : "h-3.5 w-5")} />
+        <CountryFlag code={current.flag} className={cn("shrink-0 rounded-sm", compact ? "h-4 w-6" : "h-3.5 w-5")} />
         {!compact && <span className="uppercase leading-none">{current.code}</span>}
         {!compact && (
           <ChevronDown
@@ -101,14 +100,16 @@ export function LanguageSwitcher({ compact = false, dropdownPlacement = "bottom"
             dropdownPlacement === "top" ? "bottom-[calc(100%+8px)]" : "top-[calc(100%+6px)]",
           )}
         >
-          {LANGUAGES.map(({ code, Flag, labelKey }) => {
+          {LANGUAGES.map(({ code, flag, labelKey }) => {
             const isActive = currentLang === code
             return (
               <li key={code} role="option" aria-selected={isActive}>
                 <button
                   type="button"
                   onClick={() => {
-                    i18n.changeLanguage(code)
+                    void i18n.changeLanguage(code).then(() => {
+                      persistClientLocale(code as Locale)
+                    })
                     setOpen(false)
                   }}
                   className={cn(
@@ -117,7 +118,7 @@ export function LanguageSwitcher({ compact = false, dropdownPlacement = "bottom"
                     isActive && "bg-gray-100 dark:bg-gray-800",
                   )}
                 >
-                  <Flag className="h-3.5 w-5 shrink-0 rounded-sm" />
+                  <CountryFlag code={flag} className="h-3.5 w-5 shrink-0 rounded-sm" />
                   <span className="flex-1 leading-none">{t(labelKey)}</span>
                   {isActive && <Check className="h-3.5 w-3.5 shrink-0 opacity-70" />}
                 </button>

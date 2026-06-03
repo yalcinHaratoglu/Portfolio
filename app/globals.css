@@ -89,27 +89,77 @@
   opacity: 0;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar — track + thumb + top/bottom arrows (light & dark) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted-foreground));
+  background: #9ca3af;
   border-radius: 4px;
+  border: 2px solid #ffffff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--foreground));
+  background: #6b7280;
 }
 
-/* Smooth scroll */
+/* Scrollbar okları — light */
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  height: 12px;
+  width: 10px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 5px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath fill='%236b7280' d='M4 0 8 5H0z'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath fill='%236b7280' d='M0 0h8L4 5z'/%3E%3C/svg%3E");
+}
+
+/* Firefox + smooth scroll */
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #9ca3af #ffffff;
+}
+
+html.dark {
+  scrollbar-color: #4b5563 #030712;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-color: #030712;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+html.dark ::-webkit-scrollbar-button:single-button {
+  background-color: #030712;
+}
+
+html.dark ::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath fill='%239ca3af' d='M4 0 8 5H0z'/%3E%3C/svg%3E");
+}
+
+html.dark ::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath fill='%239ca3af' d='M0 0h8L4 5z'/%3E%3C/svg%3E");
 }
 
 /* Custom cursor effects */

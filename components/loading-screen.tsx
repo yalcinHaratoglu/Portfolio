@@ -4,9 +4,14 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 
 export function LoadingScreen() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [isLoading, setIsLoading] = useState(true)
   const [progress, setProgress] = useState(0)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const progressInterval = setInterval(() => {
@@ -55,7 +60,11 @@ export function LoadingScreen() {
           opacity: Math.max(0, (progress - 20) / 80),
         }}
       >
-        {progress < 100 ? t("loading.loading") : t("loading.ready")}
+        {mounted && i18n.isInitialized
+          ? progress < 100
+            ? t("loading.loading")
+            : t("loading.ready")
+          : "\u00A0"}
       </div>
     </div>
   )

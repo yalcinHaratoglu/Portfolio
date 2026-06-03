@@ -2,24 +2,29 @@
 
 import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
-import GB from "country-flag-icons/react/3x2/GB"
-import TR from "country-flag-icons/react/3x2/TR"
 import { Button } from "@/components/ui/button"
 import { Download, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { siteData } from "@/lib/site-data"
+import { CountryFlag, type CountryCode } from "@/components/country-flag"
 
-const CV_OPTIONS = [
+const CV_OPTIONS: {
+  lang: "en" | "tr"
+  flag: CountryCode
+  path: string
+  labelKey: string
+  fileName: string
+}[] = [
   {
-    lang: "en" as const,
-    Flag: GB,
+    lang: "en",
+    flag: "GB",
     path: siteData.cv.en,
     labelKey: "hero.cvEnglish",
     fileName: "Yalcin-Haratoglu-CV-EN.pdf",
   },
   {
-    lang: "tr" as const,
-    Flag: TR,
+    lang: "tr",
+    flag: "TR",
     path: siteData.cv.tr,
     labelKey: "hero.cvTurkish",
     fileName: "Yalcin-Haratoglu-CV-TR.pdf",
@@ -100,7 +105,7 @@ export function CvDownloadButton({ className }: { className?: string }) {
             "border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950",
           )}
         >
-          {CV_OPTIONS.map(({ lang, Flag, path, labelKey, fileName }) => (
+          {CV_OPTIONS.map(({ lang, flag, path, labelKey, fileName }) => (
             <li key={lang} role="none">
               <a
                 role="menuitem"
@@ -112,7 +117,7 @@ export function CvDownloadButton({ className }: { className?: string }) {
                   "text-black hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800",
                 )}
               >
-                <Flag className="h-3.5 w-5 shrink-0 rounded-sm" />
+                <CountryFlag code={flag} className="h-3.5 w-5 shrink-0 rounded-sm" />
                 <span>{t(labelKey)}</span>
               </a>
             </li>
