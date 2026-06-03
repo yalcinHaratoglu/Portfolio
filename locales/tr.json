@@ -8,7 +8,15 @@
     "skills": "Yetenekler",
     "projects": "Projeler",
     "contact": "İletişim",
-    "hireMe": "Benimle Çalışın"
+    "hireMe": "Benimle Çalışın",
+    "hireShort": "Çalış",
+    "mobileDock": "Mobil gezinme",
+    "short": {
+      "about": "Hakkımda",
+      "skills": "Yetenek",
+      "projects": "Proje",
+      "contact": "İletişim"
+    }
   },
   "hero": {
     "role": "FRONTEND GELİŞTİRİCİ",
@@ -21,18 +29,16 @@
     "cvEnglish": "EN CV",
     "cvTurkish": "TR CV",
     "stats": {
-      "projects": "Proje",
-      "years": "Yıl Deneyim",
-      "third": "Uzmanlık",
+      "totalExperience": "Yıl Deneyim",
+      "frontendExperience": "Yıl Frontend Deneyim",
       "values": {
-        "projects": "10",
-        "years": "3",
-        "third": "Enerji Yazılımı"
+        "totalExperience": "10+",
+        "frontendExperience": "3"
       }
     },
     "available": "Müsait",
     "basedIn": "Konum",
-    "location": "Şahinbey, Gaziantep, Türkiye",
+    "location": "Türkiye",
     "scroll": "KAYDIR"
   },
   "about": {
@@ -46,8 +52,7 @@
       "Ratio Energy'de RatioSIM ve Ratio EMS enerji yazılımlarının frontend mimarisini ve modüllerini uçtan uca geliştirdim.",
       "Web Worker tabanlı WebSocket altyapısı, SCADA tek hat editörü ve Babylon.js destekli izometrik tesis editörü tasarladım.",
       "400+ dosyalık RatioSIM arayüzü, özelleştirilebilir KPI dashboard'u ve React Native mobil uygulama üzerinde çalıştım.",
-      "Playwright, Cypress, ESLint ve Storybook ile test ve dokümantasyon süreçlerine katkı sağladım.",
-      "Önceki roller: Haratoglu Pen üretim müdürü, Griffon Design kurucu ortağı, Karen Construction şantiye şefi."
+      "Playwright, Cypress, ESLint ve Storybook ile test ve dokümantasyon süreçlerine katkı sağladım."
     ],
     "github": "GitHub",
     "linkedin": "LinkedIn"
@@ -60,19 +65,50 @@
     "cards": {
       "frontend": {
         "title": "Frontend Geliştirme",
-        "skills": ["React 19", "TypeScript", "Vite", "React Router v7", "Ant Design", "Zustand", "SWR", "i18next"]
+        "skills": [
+          "React 19",
+          "TypeScript",
+          "Vite",
+          "React Router v7",
+          "Ant Design",
+          "Zustand",
+          "SWR",
+          "i18next"
+        ]
       },
       "realtime": {
         "title": "Gerçek Zamanlı & Görselleştirme",
-        "skills": ["WebSocket", "Web Workers", "Syncfusion Diagrams", "Babylon.js", "React Flow", "Recharts"]
+        "skills": [
+          "WebSocket",
+          "Web Workers",
+          "Syncfusion Diagrams",
+          "Babylon.js",
+          "React Flow",
+          "Recharts"
+        ]
       },
       "quality": {
         "title": "Test & Kalite",
-        "skills": ["Playwright", "Cypress", "ESLint", "Prettier", "Husky", "Storybook", "TypeScript Strict"]
+        "skills": [
+          "Playwright",
+          "Cypress",
+          "ESLint",
+          "Prettier",
+          "Husky",
+          "Storybook",
+          "TypeScript Strict"
+        ]
       },
       "domain": {
         "title": "Enerji & SCADA Domain",
-        "skills": ["EMS", "SCADA", "Tek Hat Diyagram", "KPI Dashboard", "Enerji Simülasyonu", "B2B SaaS"]
+        "skills": [
+          "EMS",
+          "SCADA",
+          "Tek Hat Diyagram",
+          "KPI Dashboard",
+          "Enerji Simülasyonu",
+          "B2B SaaS"
+        ]
       }
     }
   },
@@ -96,14 +132,28 @@
         "title": "Ratio EMS",
         "subtitle": "Enerji Depolama Yönetim Platformu",
         "description": "React 19, TypeScript ve Vite ile geliştirilen kurumsal EMS/SCADA SPA. WebSocket worker altyapısı, tek hat editörü, canlı KPI panelleri ve mobil uygulama.",
-        "tech": ["React 19", "TypeScript", "Vite", "WebSocket", "Syncfusion", "React Native"]
+        "tech": [
+          "React 19",
+          "TypeScript",
+          "Vite",
+          "WebSocket",
+          "Syncfusion",
+          "React Native"
+        ]
       },
       {
         "slug": "ratio-sim",
         "title": "RatioSIM",
         "subtitle": "Enerji Depolama Fizibilite Platformu",
         "description": "400+ dosyalı B2B SaaS arayüzü. Senaryo yönetimi, çok adımlı formlar, simülasyon sonuçları ve finansal görselleştirmeler.",
-        "tech": ["React 18", "TypeScript", "Vite", "Ant Design", "Recharts", "React Flow"]
+        "tech": [
+          "React 18",
+          "TypeScript",
+          "Vite",
+          "Ant Design",
+          "Recharts",
+          "React Flow"
+        ]
       },
       {
         "slug": "ratio-energy",

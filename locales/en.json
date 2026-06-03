@@ -8,7 +8,15 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "hireMe": "Hire Me"
+    "hireMe": "Hire Me",
+    "hireShort": "Hire",
+    "mobileDock": "Mobile navigation",
+    "short": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Work",
+      "contact": "Contact"
+    }
   },
   "hero": {
     "role": "FRONTEND DEVELOPER",
@@ -21,16 +29,14 @@
     "cvEnglish": "EN CV",
     "cvTurkish": "TR CV",
     "stats": {
-      "projects": "Projects",
-      "years": "Years Exp.",
-      "third": "Specialization",
+      "totalExperience": "Years Experience",
+      "frontendExperience": "Years Frontend Experience",
       "values": {
-        "projects": "10",
-        "years": "3",
-        "third": "Energy Tech"
+        "totalExperience": "10+",
+        "frontendExperience": "3"
       }
     },
-    "location": "Şahinbey, Gaziantep, Turkey",
+    "location": "Turkey",
     "basedIn": "Based in",
     "available": "Available for work",
     "scroll": "SCROLL"
@@ -48,7 +54,6 @@
       "Build RatioSIM user flows for simulation setup, execution feedback, and results exploration with React, TypeScript, and Vite.",
       "Establish shared UI standards: component libraries, i18n, performance budgets, and code review practices across product teams."
     ],
-    "priorRoles": "Previously: freelance and contract frontend work for dashboards, marketing sites, and internal tools (including Eyeds and other client projects).",
     "github": "GitHub",
     "linkedin": "LinkedIn"
   },
@@ -60,19 +65,49 @@
     "cards": {
       "frontend": {
         "title": "Frontend Engineering",
-        "skills": ["React", "TypeScript", "JavaScript", "Vite", "Next.js", "Tailwind CSS", "HTML5", "CSS3"]
+        "skills": [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Vite",
+          "Next.js",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3"
+        ]
       },
       "realtime": {
         "title": "Real-Time & SCADA UI",
-        "skills": ["WebSocket", "Live telemetry", "SCADA canvases", "High-frequency updates", "Charting", "Optimistic UI"]
+        "skills": [
+          "WebSocket",
+          "Live telemetry",
+          "SCADA canvases",
+          "High-frequency updates",
+          "Charting",
+          "Optimistic UI"
+        ]
       },
       "quality": {
         "title": "Quality & Delivery",
-        "skills": ["Component design", "Code review", "ESLint", "Performance tuning", "Accessibility", "Git workflows"]
+        "skills": [
+          "Component design",
+          "Code review",
+          "ESLint",
+          "Performance tuning",
+          "Accessibility",
+          "Git workflows"
+        ]
       },
       "domain": {
         "title": "Energy & Enterprise",
-        "skills": ["B2B SaaS", "EMS workflows", "Facility modeling", "Simulation UX", "i18n (TR/EN)", "Role-based UX"]
+        "skills": [
+          "B2B SaaS",
+          "EMS workflows",
+          "Facility modeling",
+          "Simulation UX",
+          "i18n (TR/EN)",
+          "Role-based UX"
+        ]
       }
     }
   },

@@ -26,7 +26,7 @@ export function LoadingScreen() {
   if (!isLoading) return null
 
   return (
-    <div className="fixed inset-0 z-[100] bg-white dark:bg-gray-950 flex flex-col items-center justify-center">
+    <div className="theme-surface fixed inset-0 z-[100] bg-white dark:bg-gray-950 flex flex-col items-center justify-center">
       <div className="mb-8">
         <div
           className="text-6xl md:text-8xl font-black text-black dark:text-white tracking-wider"

@@ -156,12 +156,20 @@ body * {
   animation: letter-glow 2s ease-in-out infinite;
 }
 
-/* Theme transition improvements */
-* {
+/* Tema geçişi: tüm (*) elementlerde 300ms kastırıyordu — sadece yüzeyler + view transition */
+@supports (view-transition-name: none) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.18s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.theme-surface {
   transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    color 0.3s ease;
+    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Fix for mask support */

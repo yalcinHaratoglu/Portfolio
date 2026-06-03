@@ -29,7 +29,7 @@ export function PortfolioShell({ children, showLoading = false }: PortfolioShell
   }, [])
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-black dark:text-white overflow-x-hidden relative transition-colors duration-300">
+    <div className="theme-surface min-h-screen bg-white dark:bg-gray-950 text-black dark:text-white overflow-x-hidden relative">
       {showLoading && <LoadingScreen />}
 
       <div
@@ -43,7 +43,7 @@ export function PortfolioShell({ children, showLoading = false }: PortfolioShell
       />
 
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-slate-900 dark:to-gray-950 transition-colors duration-300" />
+        <div className="theme-surface absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-slate-900 dark:to-gray-950" />
         <div
           className="absolute inset-0 opacity-20 dark:opacity-30"
           style={{
@@ -58,7 +58,9 @@ export function PortfolioShell({ children, showLoading = false }: PortfolioShell
         />
       </div>
 
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 pb-[calc(4.25rem+env(safe-area-inset-bottom))] pt-14 md:pb-0 md:pt-0">
+        {children}
+      </div>
     </div>
   )
 }

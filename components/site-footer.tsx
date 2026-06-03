@@ -6,7 +6,7 @@ export function SiteFooter() {
   const { t } = useTranslation()
 
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 py-12 relative z-10 transition-colors duration-300">
+    <footer className="theme-surface border-t border-gray-200 dark:border-gray-800 py-12 relative z-10">
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="text-2xl font-bold tracking-wider mb-4 md:mb-0">

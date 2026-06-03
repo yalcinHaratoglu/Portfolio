@@ -78,15 +78,13 @@ function HeroSection({
 }) {
   const { t } = useTranslation()
   const values = t("hero.stats.values", { returnObjects: true }) as {
-    projects: string
-    years: string
-    third: string
+    totalExperience: string
+    frontendExperience: string
   }
 
   const stats = [
-    { number: values.projects, label: t("hero.stats.projects") },
-    { number: values.years, label: t("hero.stats.years") },
-    { number: values.third, label: t("hero.stats.third") },
+    { number: values.totalExperience, label: t("hero.stats.totalExperience") },
+    { number: values.frontendExperience, label: t("hero.stats.frontendExperience") },
   ]
 
   return (
@@ -139,7 +137,7 @@ function HeroSection({
               <CvDownloadButton />
             </div>
 
-            <div className="grid grid-cols-3 gap-8 mt-12 animate-fade-in-up" style={{ animationDelay: "1.2s" }}>
+            <div className="grid max-w-md grid-cols-2 gap-10 mt-12 animate-fade-in-up" style={{ animationDelay: "1.2s" }}>
               {stats.map((stat, index) => (
                 <div key={index}>
                   <div className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-1">{stat.number}</div>
@@ -151,36 +149,38 @@ function HeroSection({
         </div>
 
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-          <div className="relative overflow-visible pb-14">
-            <div className="relative z-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
-                <Image
-                  src="/profile.png"
-                  alt={t("hero.name")}
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-cover"
-                  priority
-                />
-              </div>
-              <div className="absolute bottom-8 right-8 bg-white dark:bg-gray-900 rounded-full p-4 shadow-lg border border-gray-200 dark:border-gray-700">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-sm font-medium text-black dark:text-white">{t("hero.available")}</span>
-                </div>
-              </div>
+          <div
+            className="relative z-10 w-80 md:w-96 animate-fade-in-up overflow-visible"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <div className="aspect-square w-full overflow-hidden rounded-full border-4 border-white shadow-2xl dark:border-gray-800">
+              <Image
+                src="/profile.png"
+                alt={t("hero.name")}
+                width={400}
+                height={400}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
 
             <div
-              className="absolute left-1/2 -translate-x-1/2 -bottom-2 z-30 flex items-center gap-3 rounded-2xl border border-gray-200 bg-white px-5 py-3 shadow-xl dark:border-gray-600 dark:bg-gray-900 animate-fade-in-up"
+              className="absolute bottom-6 left-0 z-20 flex max-w-[calc(100%-3rem)] items-center gap-3 rounded-2xl border border-gray-200 bg-white px-4 py-2.5 shadow-xl dark:border-gray-600 dark:bg-gray-900 animate-fade-in-up sm:bottom-8 sm:left-2"
               style={{ animationDelay: "1s" }}
             >
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800">
                 <MapPin className="h-4 w-4 text-black dark:text-white" />
               </div>
-              <div className="text-left">
+              <div className="min-w-0 text-left leading-tight">
                 <div className="text-sm font-semibold text-black dark:text-white">{t("hero.basedIn")}</div>
                 <div className="text-xs font-medium text-gray-600 dark:text-gray-300">{t("hero.location")}</div>
+              </div>
+            </div>
+
+            <div className="absolute bottom-6 right-0 z-20 rounded-full border border-gray-200 bg-white p-3 shadow-xl dark:border-gray-700 dark:bg-gray-900 sm:bottom-8 sm:right-2">
+              <div className="flex items-center space-x-2 whitespace-nowrap">
+                <div className="h-3 w-3 shrink-0 animate-pulse rounded-full bg-green-500" />
+                <span className="text-sm font-medium text-black dark:text-white">{t("hero.available")}</span>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@ function AboutSection({ aboutRef }: { aboutRef: React.RefObject<HTMLElement | nu
     <section
       id="about"
       ref={aboutRef}
-      className="py-32 relative z-10 transition-colors duration-300"
+      className="theme-surface py-32 relative z-10"
     >
       <div className="max-w-7xl mx-auto px-8">
         <div
@@ -241,8 +241,6 @@ function AboutSection({ aboutRef }: { aboutRef: React.RefObject<HTMLElement | nu
                   </li>
                 ))}
               </ul>
-
-              <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">{t("about.priorRoles")}</p>
 
               <div className="mt-12 flex flex-wrap gap-4">
                 <Button
@@ -338,7 +336,7 @@ function SkillCard({
 
   return (
     <Card
-      className={`h-full bg-white dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 transition-all duration-700 group backdrop-blur-sm shadow-lg hover:shadow-xl relative overflow-hidden ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      className={`theme-surface h-full bg-white dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 transition-all duration-700 group backdrop-blur-sm shadow-lg hover:shadow-xl relative overflow-hidden ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       style={{ transitionDelay: `${index * 200}ms` }}
     >
@@ -374,7 +372,7 @@ function ProjectsSection({ projectsRef }: { projectsRef: React.RefObject<HTMLEle
     <section
       id="projects"
       ref={projectsRef}
-      className="py-32 relative z-10 transition-colors duration-300"
+      className="theme-surface py-32 relative z-10"
     >
       <div className="max-w-7xl mx-auto px-8">
         <div

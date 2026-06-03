@@ -12,7 +12,12 @@ const LANGUAGES = [
   { code: "tr" as const, Flag: TR, labelKey: "language.tr" },
 ]
 
-export function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+  compact?: boolean
+  dropdownPlacement?: "top" | "bottom"
+}
+
+export function LanguageSwitcher({ compact = false, dropdownPlacement = "bottom" }: LanguageSwitcherProps) {
   const { i18n, t } = useTranslation()
   const [mounted, setMounted] = useState(false)
   const [open, setOpen] = useState(false)
@@ -50,7 +55,10 @@ export function LanguageSwitcher() {
   if (!mounted) {
     return (
       <div
-        className="h-10 min-w-[5.25rem] shrink-0 rounded-md border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"
+        className={cn(
+          "shrink-0 rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900",
+          compact ? "h-10 w-10" : "h-10 min-w-[5.25rem]",
+        )}
         aria-hidden
       />
     )
@@ -65,17 +73,22 @@ export function LanguageSwitcher() {
         aria-haspopup="listbox"
         onClick={() => setOpen((prev) => !prev)}
         className={cn(
-          "inline-flex h-10 min-w-[5.25rem] items-center gap-2 rounded-md border px-3 text-sm font-medium transition-all duration-200",
+          "inline-flex items-center border text-sm font-medium transition-all duration-200",
           "border-gray-200 bg-white text-black hover:bg-gray-50",
           "dark:border-gray-800 dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800",
           open && "ring-2 ring-gray-300 ring-offset-0 dark:ring-gray-600",
+          compact
+            ? "h-10 w-10 shrink-0 justify-center rounded-full p-0"
+            : "h-10 min-w-[5.25rem] gap-2 rounded-md px-3",
         )}
       >
-        <CurrentFlag className="h-3.5 w-5 shrink-0 rounded-sm" />
-        <span className="uppercase leading-none">{current.code}</span>
-        <ChevronDown
-          className={cn("h-3.5 w-3.5 shrink-0 opacity-50 transition-transform duration-200", open && "rotate-180")}
-        />
+        <CurrentFlag className={cn("shrink-0 rounded-sm", compact ? "h-4 w-6" : "h-3.5 w-5")} />
+        {!compact && <span className="uppercase leading-none">{current.code}</span>}
+        {!compact && (
+          <ChevronDown
+            className={cn("h-3.5 w-3.5 shrink-0 opacity-50 transition-transform duration-200", open && "rotate-180")}
+          />
+        )}
       </button>
 
       {open && (
@@ -83,8 +96,9 @@ export function LanguageSwitcher() {
           role="listbox"
           aria-label={t("language.select")}
           className={cn(
-            "absolute right-0 top-[calc(100%+6px)] z-[60] min-w-[10.5rem] overflow-hidden rounded-md border py-1 shadow-lg",
+            "absolute right-0 z-[60] min-w-[10.5rem] overflow-hidden rounded-xl border py-1 shadow-lg",
             "border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950",
+            dropdownPlacement === "top" ? "bottom-[calc(100%+8px)]" : "top-[calc(100%+6px)]",
           )}
         >
           {LANGUAGES.map(({ code, Flag, labelKey }) => {
