@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
-import { Resend } from "resend"
 import { z } from "zod"
+import { isMailConfigured, sendContactEmail } from "@/lib/mail"
 
 const contactSchema = z.object({
   name: z.string().min(2).max(100),
@@ -25,46 +25,21 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true })
     }
 
-    const apiKey = process.env.RESEND_API_KEY
-    const to = process.env.CONTACT_TO_EMAIL ?? "myalcinharatoglu@gmail.com"
-    const from = process.env.CONTACT_FROM_EMAIL ?? "onboarding@resend.dev"
-
-    if (!apiKey) {
+    if (!isMailConfigured()) {
       return NextResponse.json(
-        { error: "Email service is not configured. Add RESEND_API_KEY to .env.local" },
+        {
+          error:
+            "E-posta servisi yapılandırılmamış. .env.local dosyasına SMTP_USER ve SMTP_PASS ekleyin.",
+        },
         { status: 503 },
       )
     }
 
-    const resend = new Resend(apiKey)
-    const emailSubject = subject?.trim()
-      ? `[Portfolio] ${subject.trim()}`
-      : `[Portfolio] ${name} — Contact form`
-
-    const { error } = await resend.emails.send({
-      from,
-      to,
-      replyTo: email,
-      subject: emailSubject,
-      text: [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        subject?.trim() ? `Subject: ${subject.trim()}` : "",
-        "",
-        message,
-      ]
-        .filter(Boolean)
-        .join("\n"),
-    })
-
-    if (error) {
-      console.error("Resend error:", error)
-      return NextResponse.json({ error: "Failed to send email" }, { status: 500 })
-    }
+    await sendContactEmail({ name, email, subject, message })
 
     return NextResponse.json({ ok: true })
   } catch (err) {
     console.error("Contact API error:", err)
-    return NextResponse.json({ error: "Server error" }, { status: 500 })
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 })
   }
 }
