@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "title": "Yalçın Haratoğlu - Frontend Geliştirici",
+    "description": "React, TypeScript ve Vite ile kurumsal B2B SaaS ürünleri geliştiren frontend geliştirici. Enerji yönetimi, SCADA ve yenilenebilir enerji simülasyonu alanlarında uzman."
+  },
+  "nav": {
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "hireMe": "Benimle Çalışın"
+  },
+  "hero": {
+    "role": "FRONTEND GELİŞTİRİCİ",
+    "greeting": "Merhaba, ben",
+    "name": "Yalçın Haratoğlu",
+    "description": "React, TypeScript ve Vite ile kurumsal B2B SaaS ürünleri geliştiriyorum. Ratio Energy'de Ratio EMS ve RatioSIM platformlarının web arayüzlerini uçtan uca tasarladım. Gerçek zamanlı WebSocket altyapısı, SCADA tek hat diyagram editörleri ve özelleştirilebilir dashboard deneyiminde uzmanım.",
+    "viewWork": "Çalışmalarımı Gör",
+    "downloadCv": "CV İndir",
+    "chooseCvLanguage": "CV dilini seçin",
+    "cvEnglish": "EN CV",
+    "cvTurkish": "TR CV",
+    "stats": {
+      "projects": "Proje",
+      "years": "Yıl Deneyim",
+      "third": "Uzmanlık",
+      "values": {
+        "projects": "10",
+        "years": "3",
+        "third": "Enerji Yazılımı"
+      }
+    },
+    "available": "Müsait",
+    "basedIn": "Konum",
+    "location": "Şahinbey, Gaziantep, Türkiye",
+    "scroll": "KAYDIR"
+  },
+  "about": {
+    "label": "01 — HAKKIMDA",
+    "title": "Enerji Yazılımında",
+    "titleHighlight": "Frontend Uzmanlığı",
+    "p1": "Ratio Energy'de Ratio EMS ve RatioSIM enerji yazılımlarının frontend'ini uçtan uca geliştiren bir frontend geliştiriciyim. Karmaşık teknik alanları sezgisel, performanslı ve ölçeklenebilir arayüzlere dönüştürmeye odaklanıyorum.",
+    "p2": "WebSocket tabanlı gerçek zamanlı altyapı, SCADA tek hat diyagram editörleri, izometrik tesis editörleri, sürükle-bırak dashboard motorları ve React Native mobil uygulamalar üzerinde çalıştım. İnşaat mühendisliği ve üretim yönetimi geçmişim, teknik domainleri hızla kavramamı sağlıyor.",
+    "p3": "TypeScript strict typing, Playwright E2E testleri ve Storybook ile kod kalitesine önem veriyorum. TR/EN çok dilli deneyimler sunarak kurumsal müşterilere ürün odaklı çözümler geliştiriyorum.",
+    "experience": [
+      "Ratio Energy'de RatioSIM ve Ratio EMS enerji yazılımlarının frontend mimarisini ve modüllerini uçtan uca geliştirdim.",
+      "Web Worker tabanlı WebSocket altyapısı, SCADA tek hat editörü ve Babylon.js destekli izometrik tesis editörü tasarladım.",
+      "400+ dosyalık RatioSIM arayüzü, özelleştirilebilir KPI dashboard'u ve React Native mobil uygulama üzerinde çalıştım.",
+      "Playwright, Cypress, ESLint ve Storybook ile test ve dokümantasyon süreçlerine katkı sağladım.",
+      "Önceki roller: Haratoglu Pen üretim müdürü, Griffon Design kurucu ortağı, Karen Construction şantiye şefi."
+    ],
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "skills": {
+    "label": "02 — UZMANLIK",
+    "title": "Yetenekler &",
+    "titleHighlight": "Teknolojiler",
+    "subtitle": "Kurumsal enerji yazılımı projelerinde kanıtlanmış frontend ve görselleştirme yetkinlikleri",
+    "cards": {
+      "frontend": {
+        "title": "Frontend Geliştirme",
+        "skills": ["React 19", "TypeScript", "Vite", "React Router v7", "Ant Design", "Zustand", "SWR", "i18next"]
+      },
+      "realtime": {
+        "title": "Gerçek Zamanlı & Görselleştirme",
+        "skills": ["WebSocket", "Web Workers", "Syncfusion Diagrams", "Babylon.js", "React Flow", "Recharts"]
+      },
+      "quality": {
+        "title": "Test & Kalite",
+        "skills": ["Playwright", "Cypress", "ESLint", "Prettier", "Husky", "Storybook", "TypeScript Strict"]
+      },
+      "domain": {
+        "title": "Enerji & SCADA Domain",
+        "skills": ["EMS", "SCADA", "Tek Hat Diyagram", "KPI Dashboard", "Enerji Simülasyonu", "B2B SaaS"]
+      }
+    }
+  },
+  "projects": {
+    "label": "03 — PORTFÖY",
+    "title": "Öne Çıkan",
+    "titleHighlight": "Projeler",
+    "subtitle": "Enerji sektöründe geliştirdiğim kurumsal platformlar ve modüller",
+    "viewDetails": "Detayları Gör",
+    "backToProjects": "Tüm Projelere Dön",
+    "visitLive": "Canlı Siteyi Aç",
+    "sections": {
+      "overview": "Genel Bakış",
+      "role": "Rolüm",
+      "highlights": "Öne Çıkanlar",
+      "outcome": "Sonuç"
+    },
+    "items": [
+      {
+        "slug": "ratio-ems",
+        "title": "Ratio EMS",
+        "subtitle": "Enerji Depolama Yönetim Platformu",
+        "description": "React 19, TypeScript ve Vite ile geliştirilen kurumsal EMS/SCADA SPA. WebSocket worker altyapısı, tek hat editörü, canlı KPI panelleri ve mobil uygulama.",
+        "tech": ["React 19", "TypeScript", "Vite", "WebSocket", "Syncfusion", "React Native"]
+      },
+      {
+        "slug": "ratio-sim",
+        "title": "RatioSIM",
+        "subtitle": "Enerji Depolama Fizibilite Platformu",
+        "description": "400+ dosyalı B2B SaaS arayüzü. Senaryo yönetimi, çok adımlı formlar, simülasyon sonuçları ve finansal görselleştirmeler.",
+        "tech": ["React 18", "TypeScript", "Vite", "Ant Design", "Recharts", "React Flow"]
+      },
+      {
+        "slug": "ratio-energy",
+        "title": "Ratio Energy",
+        "subtitle": "Kurumsal Pazarlama Sitesi",
+        "description": "Ratio Energy'nin ürün vitrini: RatioSIM, Ratio EMS ve TradeOpt çözümlerini tanıtan modern kurumsal web sitesi.",
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "slug": "eyeds",
+        "title": "EYEDS",
+        "subtitle": "Yenilenebilir Enerji Kurumsal Sitesi",
+        "description": "Esen Yenilenebilir Enerji ve Depolama Sistemleri için çok dilli kurumsal web sitesi. Hizmetler, ürünler ve referans vitrini.",
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "slug": "ems-scada-editor",
+        "title": "SCADA Tek Hat Editörü",
+        "subtitle": "Syncfusion Diyagram Editörü",
+        "description": "Syncfusion Diagram tabanlı SCADA tek hat diyagram editörü. Sinyal kuralları, canlı entegrasyon ve özellik panelleri.",
+        "tech": ["React", "TypeScript", "Syncfusion Diagrams", "WebSocket"]
+      },
+      {
+        "slug": "ems-facility-editor",
+        "title": "Tesis Görünüm Editörü",
+        "subtitle": "İzometrik Varlık Yerleştirme",
+        "description": "General View Editor: izometrik grid üzerinde varlık yerleştirme, port bağlantıları, çarpışma kontrolü ve Babylon.js 3D katmanı.",
+        "tech": ["React", "TypeScript", "Babylon.js", "GLTF"]
+      },
+      {
+        "slug": "ems-dashboard",
+        "title": "Dashboard Motoru",
+        "subtitle": "Sürükle-Bırak KPI Panelleri",
+        "description": "Özelleştirilebilir dashboard motoru: widget yerleşimi, zoom/pan tuvali ve spatial hashing ile çarpışma çözümlemesi.",
+        "tech": ["React", "TypeScript", "Recharts", "react-zoom-pan-pinch"]
+      },
+      {
+        "slug": "ems-mobile",
+        "title": "Ratio EMS Mobil",
+        "subtitle": "React Native Uygulaması",
+        "description": "Ratio EMS platformunun React Native mobil uygulaması. Sahada enerji varlıklarını izleme ve yönetim deneyimi.",
+        "tech": ["React Native", "TypeScript", "REST API"]
+      },
+      {
+        "slug": "sim-results",
+        "title": "Simülasyon Sonuçları",
+        "subtitle": "Finansal & Enerji Görselleştirme",
+        "description": "RatioSIM simülasyon sonuç ekranları: K&Z tabloları, nakit akışı, enerji grafikleri ve PDF rapor dışa aktarımı.",
+        "tech": ["React", "Recharts", "React Flow", "@react-pdf/renderer"]
+      },
+      {
+        "slug": "ems-trading",
+        "title": "Enerji Ticareti Arayüzleri",
+        "subtitle": "Broker, Teklif & Planlama",
+        "description": "Enerji ticareti modülleri: broker genel bakış, fiyat yönetimi, teklif verme, tahmin karşılaştırmaları ve planlama takvimi.",
+        "tech": ["React", "TypeScript", "Ant Design", "Recharts"]
+      }
+    ],
+    "details": {
+      "ratio-ems": {
+        "title": "Ratio EMS",
+        "subtitle": "Enerji Depolama Yönetim Platformu (EMS/SCADA)",
+        "overview": "Ratio EMS, batarya enerji depolama tesislerinin gerçek zamanlı izlenmesi, SCADA görselleştirmesi ve operasyonel yönetimi için geliştirilmiş kurumsal bir enerji yönetim platformudur. React 19, TypeScript ve Vite ile modüler SPA mimarisi üzerine inşa edilmiştir.",
+        "role": "Ratio Energy'de frontend geliştirici olarak platformun web arayüzünü uçtan uca tasarladım ve geliştirdim.",
+        "highlights": [
+          "Web Worker tabanlı WebSocket altyapısı: UI thread'den ayrılmış bağlantı, exponential backoff yeniden bağlanma ve otomatik abonelik yönetimi",
+          "Syncfusion Diagram ile SCADA tek hat diyagram editörü: sinyal kuralları, okuma/yazma bileşenleri ve canlı sinyal entegrasyonu",
+          "Babylon.js destekli izometrik tesis editörü: varlık yerleştirme, port bağlantıları, undo/redo ve klavye kısayolları",
+          "Sürükle-bırak özelleştirilebilir dashboard motoru ve canlı/geçmiş KPI şablonları",
+          "Enerji ticareti, alarm yönetimi, cihaz detay grafikleri ve React Native mobil uygulama"
+        ],
+        "outcome": "100 MW+ aktif BESS yönetimi altında kullanılan, vendor-agnostic kurumsal EMS platformunun frontend katmanını oluşturdum."
+      },
+      "ratio-sim": {
+        "title": "RatioSIM",
+        "subtitle": "Enerji Depolama Fizibilite Simülasyon Platformu",
+        "overview": "RatioSIM, enerji depolama yatırımlarının fizibilitesini analiz etmek için yapay zeka destekli simülasyonlar sunan B2B SaaS platformudur. ROI, NPV, LCOS ve LCOE metrikleriyle finansal ve teknik analiz sağlar.",
+        "role": "400+ dosyalı frontend mimarisini kurarak simülasyon modüllerinin tüm arayüzünü uçtan uca geliştirdim.",
+        "highlights": [
+          "Modüler API servis katmanı ve feature-based mimari ile ölçeklenebilir SPA yapısı",
+          "Ant Design çok adımlı drawer formları: üretim profili, FiT, finansal metrikler ve piyasa katılımı",
+          "Simülasyon sonuç ekranları: K&Z, nakit akışı, enerji grafikleri ve analiz tabloları",
+          "JWT kimlik doğrulama, otomatik token yenileme ve rol tabanlı navigasyon (Admin, Finance, Energy, Standard)",
+          "30+ yeniden kullanılabilir UI bileşeni ve Storybook 8 dokümantasyonu (~60 story)"
+        ],
+        "outcome": "1 GWh+ fizibilite çalışması tamamlanan platformun frontend'ini geliştirerek banka başvurularına uygun finansal analiz arayüzleri sundum."
+      },
+      "ratio-energy": {
+        "title": "Ratio Energy",
+        "subtitle": "Kurumsal Pazarlama & Ürün Vitrini",
+        "overview": "Ratio Energy'nin kurumsal web sitesi; batarya yönetim sistemleri ve yapay zeka destekli optimizasyon çözümlerini tanıtan modern bir pazarlama platformudur. RatioSIM, Ratio EMS ve TradeOpt ürün ailesini vitrinler.",
+        "role": "Kurumsal pazarlama sitesinin frontend geliştirmesinde yer aldım.",
+        "highlights": [
+          "Ürün ailesi vitrini: RatioSIM, Ratio EMS ve TradeOpt tanıtım sayfaları",
+          "Kurumsal müşteri referansları ve sektör liderleri bölümü",
+          "Responsive tasarım ve modern kurumsal görsel dil",
+          "TR/EN çok dilli içerik desteği"
+        ],
+        "outcome": "Ratio Energy'nin dijital vitrini olarak yatırımcı ve EPC firmalarına ulaşan profesyonel bir kurumsal web deneyimi oluşturdum."
+      },
+      "eyeds": {
+        "title": "EYEDS",
+        "subtitle": "Esen Yenilenebilir Enerji ve Depolama Sistemleri",
+        "overview": "EYEDS (Esen Yenilenebilir Enerji ve Depolama Sistemleri A.Ş.) için geliştirilen kurumsal web sitesi. Depolamalı yenilenebilir enerji projelerinde Türkiye'nin öncü firmalarından birinin dijital vitrini.",
+        "role": "Kurumsal web sitesinin frontend geliştirmesinde yer aldım.",
+        "highlights": [
+          "Hizmetler, ürünler ve referanslar bölümleri ile kapsamlı kurumsal site yapısı",
+          "SCADA, EMS, batarya simülatörü ve ticaret optimizasyonu ürün vitrini",
+          "Stratejik ortaklar ve tamamlanan projeler showcase'i",
+          "Responsive tasarım ve erişilebilir kurumsal arayüz"
+        ],
+        "outcome": "Türkiye'nin enerji dönüşümünde lider konumdaki EYEDS'in profesyonel dijital kimliğini destekleyen kurumsal web sitesini geliştirdim."
+      },
+      "ems-scada-editor": {
+        "title": "SCADA Tek Hat Editörü",
+        "subtitle": "Syncfusion Diagram Tabanlı SCADA Editörü",
+        "overview": "Ratio EMS platformunun SCADA modülü için geliştirilen tek hat diyagram editörü. Syncfusion Diagram bileşeni üzerine inşa edilmiş, enerji tesislerinin elektriksel şemalarını görselleştiren ve düzenleyen profesyonel bir editör.",
+        "role": "SCADA tek hat diyagram editörünün frontend mimarisini ve tüm etkileşimlerini geliştirdim.",
+        "highlights": [
+          "Node ve connector özellik panelleri ile detaylı diyagram düzenleme",
+          "Sinyal kuralları: renk, görünürlük ve efekt tabanlı dinamik görselleştirme",
+          "Sinyal okuma/yazma bileşenleri ve canlı WebSocket entegrasyonu",
+          "Sürükle-bırak diyagram oluşturma ve şablon yönetimi"
+        ],
+        "outcome": "Operatörlerin enerji tesislerinin elektriksel topolojisini gerçek zamanlı sinyallerle görselleştirmesini sağlayan SCADA editörünü hayata geçirdim."
+      },
+      "ems-facility-editor": {
+        "title": "Tesis Görünüm Editörü",
+        "subtitle": "General View — İzometrik Tesis Düzenleme",
+        "overview": "Ratio EMS platformunun General View modülü. Enerji depolama tesislerinin izometrik grid üzerinde varlık yerleştirme, port bağlantıları ve 3D görselleştirme ile tesis düzenini oluşturmayı sağlayan gelişmiş bir editör.",
+        "role": "İzometrik tesis editörünün frontend geliştirmesini uçtan uca gerçekleştirdim.",
+        "highlights": [
+          "İzometrik grid üzerinde varlık yerleştirme ve port/connection çizimi",
+          "Çarpışma ve doluluk kontrolü ile akıllı yerleştirme",
+          "Undo/redo stack ve kapsamlı klavye kısayolları",
+          "Babylon.js GLTF 3D katmanı ile tesis layout görselleştirmesi"
+        ],
+        "outcome": "Mühendislerin tesis düzenini görsel olarak planlamasını ve 3D katmanda doğrulamasını sağlayan editörü geliştirdim."
+      },
+      "ems-dashboard": {
+        "title": "Dashboard Motoru",
+        "subtitle": "Özelleştirilebilir KPI Dashboard",
+        "overview": "Ratio EMS platformunun sürükle-bırak dashboard motoru. Kullanıcıların kendi KPI panellerini widget yerleşimi ile oluşturmasını, zoom/pan ile gezinmesini ve canlı verilerle beslenmesini sağlar.",
+        "role": "Dashboard motorunun frontend mimarisini ve widget yerleşim sistemini geliştirdim.",
+        "highlights": [
+          "Sürükle-bırak widget layout motoru ve grid snap sistemi",
+          "Zoom/pan tuvali ile büyük dashboard'larda gezinme",
+          "Spatial hashing ile çarpışma çözümlemesi ve otomatik yerleştirme",
+          "Gauge, chart, table ve overview panel şablonları ile canlı/geçmiş KPI entegrasyonu"
+        ],
+        "outcome": "Operatörlerin kendi operasyonel panellerini kod yazmadan oluşturmasını sağlayan esnek dashboard motorunu hayata geçirdim."
+      },
+      "ems-mobile": {
+        "title": "Ratio EMS Mobil",
+        "subtitle": "React Native Mobil Uygulama",
+        "overview": "Ratio EMS platformunun React Native ile geliştirilen mobil uygulaması. Sahada enerji depolama tesislerinin izlenmesi ve temel operasyonel işlemler için tasarlanmış native mobil deneyim.",
+        "role": "React Native mobil uygulamanın frontend geliştirmesinde yer aldım.",
+        "highlights": [
+          "React Native ile cross-platform mobil uygulama mimarisi",
+          "Ratio EMS REST API entegrasyonu ve kimlik doğrulama",
+          "Saha operasyonları için optimize edilmiş mobil arayüz",
+          "Yayın sürecine hazır uygulama geliştirme"
+        ],
+        "outcome": "Ratio EMS platformunun mobil erişim kanalını oluşturarak saha ekiplerinin tesisleri hareket halindeyken izlemesini sağladım."
+      },
+      "sim-results": {
+        "title": "Simülasyon Sonuçları",
+        "subtitle": "Finansal & Enerji Analiz Ekranları",
+        "overview": "RatioSIM platformunun simülasyon sonuç modülü. Enerji depolama yatırımlarının finansal ve teknik analiz sonuçlarını interaktif tablolar, grafikler ve PDF raporlarla sunan kapsamlı bir görselleştirme paketi.",
+        "role": "Simülasyon sonuç ekranlarının frontend geliştirmesini uçtan uca gerçekleştirdim.",
+        "highlights": [
+          "Finansal tablolar: K&Z, nakit akışı, sistem amortismanı ve yenileme maliyetleri",
+          "Enerji grafikleri: çevrim süreleri, SoC dağılımları ve C-Rate analizi",
+          "Recharts ve React Flow ile interaktif finansal/enerji görselleştirmeleri",
+          "@react-pdf/renderer ile PDF simülasyon raporları ve görsel dışa aktarım"
+        ],
+        "outcome": "Yatırımcıların simülasyon sonuçlarını banka başvurularına uygun formatta analiz etmesini sağlayan kapsamlı sonuç ekranlarını geliştirdim."
+      },
+      "ems-trading": {
+        "title": "Enerji Ticareti Arayüzleri",
+        "subtitle": "Broker, Teklif & Piyasa Yönetimi",
+        "overview": "Ratio EMS platformunun enerji ticareti modülü. Depolama varlıklarının enerji piyasalarında ticaretini yönetmek için broker genel bakış, fiyat yönetimi, teklif verme ve planlama araçları sunar.",
+        "role": "Enerji ticareti modüllerinin frontend arayüzlerini geliştirdim.",
+        "highlights": [
+          "Broker genel bakış ve portföy yönetim ekranları",
+          "Fiyat yönetimi ve teklif verme (bidding) arayüzleri",
+          "Tahmin karşılaştırmaları ve analiz panelleri",
+          "Planlama takvimi ve operasyonel zamanlama arayüzleri"
+        ],
+        "outcome": "Enerji ticaret ekiplerinin piyasa operasyonlarını platform üzerinden yönetmesini sağlayan ticaret modülü arayüzlerini oluşturdum."
+      }
+    }
+  },
+  "contact": {
+    "label": "04 — İLETİŞİM",
+    "title": "Birlikte Harika Bir Şey",
+    "titleHighlight": "Yaratalım",
+    "subtitle": "Enerji yazılımı veya kurumsal frontend projeleriniz için birlikte çalışalım. Vizyonunuzu hayata geçirmeye hazırım.",
+    "startProject": "Proje Başlat",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "available": "Yeni fırsatlara açığım",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "loading": {
+    "loading": "YÜKLENİYOR...",
+    "ready": "HAZIR"
+  },
+  "theme": {
+    "toggle": "Temayı değiştir"
+  },
+  "language": {
+    "select": "Dil seçin",
+    "en": "İngilizce",
+    "tr": "Türkçe"
+  },
+  "projectCard": {
+    "featured": "Öne Çıkan",
+    "viewDetails": "Detayları Gör",
+    "more": "daha fazla"
+  },
+  "hireMe": {
+    "title": "Benimle Çalışın",
+    "subtitle": "Projenizi kısaca anlatın; genelde 1–2 iş günü içinde dönüş yaparım.",
+    "close": "Kapat",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Adınız ve soyadınız",
+    "email": "E-posta",
+    "emailPlaceholder": "ornek@sirket.com",
+    "subject": "Konu (isteğe bağlı)",
+    "subjectPlaceholder": "Proje veya işbirliği konusu",
+    "message": "Mesaj",
+    "messagePlaceholder": "Projeniz, zaman çizelgesi ve beklentileriniz hakkında bilgi verin...",
+    "send": "Mesajı Gönder",
+    "sending": "Gönderiliyor...",
+    "successMessage": "Teşekkürler! Mesajınız iletildi, en kısa sürede dönüş yapacağım.",
+    "errorMessage": "Mesaj gönderilemedi. Lütfen tekrar deneyin veya doğrudan e-posta gönderin."
+  }
+}

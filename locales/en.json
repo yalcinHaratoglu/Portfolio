@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "title": "Yalçın Haratoğlu — Frontend Developer | Energy & Enterprise SaaS",
+    "description": "Frontend Developer at Ratio Energy building Ratio EMS and RatioSIM B2B SaaS with React, TypeScript, Vite, and real-time WebSocket SCADA interfaces for the energy sector."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "role": "FRONTEND DEVELOPER",
+    "greeting": "Hello, I'm",
+    "name": "Yalçın Haratoğlu",
+    "description": "I build production-grade B2B SaaS for the energy sector at Ratio Energy — from Ratio EMS operations platforms to RatioSIM analytics — using React, TypeScript, Vite, and WebSocket-driven SCADA experiences.",
+    "viewWork": "View My Work",
+    "downloadCv": "Download CV",
+    "chooseCvLanguage": "Choose CV language",
+    "cvEnglish": "EN CV",
+    "cvTurkish": "TR CV",
+    "stats": {
+      "projects": "Projects",
+      "years": "Years Exp.",
+      "third": "Specialization",
+      "values": {
+        "projects": "10",
+        "years": "3",
+        "third": "Energy Tech"
+      }
+    },
+    "location": "Şahinbey, Gaziantep, Turkey",
+    "basedIn": "Based in",
+    "available": "Available for work",
+    "scroll": "SCROLL"
+  },
+  "about": {
+    "label": "01 — ABOUT",
+    "title": "Energy Software",
+    "titleHighlight": "Frontend Engineer",
+    "p1": "I am a Frontend Developer focused on enterprise energy software at Ratio Energy, where I ship customer-facing products that operators and engineers rely on daily — including Ratio EMS and RatioSIM.",
+    "p2": "My work spans complex dashboards, SCADA diagram editors, facility configuration tools, simulation result views, and trading workflows. I prioritize type-safe React architectures, predictable state management, and interfaces that stay responsive under high-frequency telemetry.",
+    "p3": "I collaborate closely with backend, product, and domain experts to translate EMS and simulation requirements into maintainable UI modules, bilingual (TR/EN) experiences, and accessible patterns for long operational sessions.",
+    "experience": [
+      "Own end-to-end frontend delivery for Ratio EMS modules: SCADA editor, facility editor, dashboards, mobile views, and trading screens.",
+      "Implement real-time monitoring with WebSocket streams, live charts, and resilient reconnection UX for SCADA and telemetry data.",
+      "Build RatioSIM user flows for simulation setup, execution feedback, and results exploration with React, TypeScript, and Vite.",
+      "Establish shared UI standards: component libraries, i18n, performance budgets, and code review practices across product teams."
+    ],
+    "priorRoles": "Previously: freelance and contract frontend work for dashboards, marketing sites, and internal tools (including Eyeds and other client projects).",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "skills": {
+    "label": "02 — EXPERTISE",
+    "title": "Skills &",
+    "titleHighlight": "Technologies",
+    "subtitle": "Stack and practices I use to deliver reliable energy-sector SaaS interfaces",
+    "cards": {
+      "frontend": {
+        "title": "Frontend Engineering",
+        "skills": ["React", "TypeScript", "JavaScript", "Vite", "Next.js", "Tailwind CSS", "HTML5", "CSS3"]
+      },
+      "realtime": {
+        "title": "Real-Time & SCADA UI",
+        "skills": ["WebSocket", "Live telemetry", "SCADA canvases", "High-frequency updates", "Charting", "Optimistic UI"]
+      },
+      "quality": {
+        "title": "Quality & Delivery",
+        "skills": ["Component design", "Code review", "ESLint", "Performance tuning", "Accessibility", "Git workflows"]
+      },
+      "domain": {
+        "title": "Energy & Enterprise",
+        "skills": ["B2B SaaS", "EMS workflows", "Facility modeling", "Simulation UX", "i18n (TR/EN)", "Role-based UX"]
+      }
+    }
+  },
+  "projects": {
+    "label": "03 — PORTFOLIO",
+    "title": "Selected",
+    "titleHighlight": "Projects",
+    "subtitle": "Products and modules I contributed to at Ratio Energy and related energy-software work",
+    "viewDetails": "View Details",
+    "backToProjects": "Back to Projects",
+    "visitLive": "Visit Live Site",
+    "sections": {
+      "overview": "Overview",
+      "role": "My Role",
+      "highlights": "Highlights",
+      "outcome": "Outcome"
+    },
+    "items": [
+      {
+        "slug": "ratio-ems",
+        "title": "Ratio EMS",
+        "subtitle": "Enterprise Energy Management Platform",
+        "description": "Flagship B2B SaaS for monitoring, operating, and configuring energy assets with role-based workspaces and real-time SCADA views.",
+        "tech": ["React", "TypeScript", "Vite", "WebSocket", "SCADA", "i18n"]
+      },
+      {
+        "slug": "ratio-sim",
+        "title": "RatioSIM",
+        "subtitle": "Energy Simulation & Analytics",
+        "description": "Web platform for running simulations, comparing scenarios, and presenting results to technical and business stakeholders.",
+        "tech": ["React", "TypeScript", "Vite", "Charts", "REST APIs"]
+      },
+      {
+        "slug": "ratio-energy",
+        "title": "Ratio Energy",
+        "subtitle": "Corporate Product Website",
+        "description": "Marketing and product presence for Ratio Energy solutions, aligned with EMS and simulation offerings.",
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "slug": "eyeds",
+        "title": "Eyeds",
+        "subtitle": "Client Web Presence",
+        "description": "Delivered a modern, responsive company website with clear service positioning and contact flows.",
+        "tech": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "slug": "ems-scada-editor",
+        "title": "EMS SCADA Editor",
+        "subtitle": "Diagram & Topology Builder",
+        "description": "Canvas-based editor for building and maintaining SCADA single-line diagrams linked to live device telemetry.",
+        "tech": ["React", "TypeScript", "Canvas", "WebSocket", "Drag-and-drop"]
+      },
+      {
+        "slug": "ems-facility-editor",
+        "title": "EMS Facility Editor",
+        "subtitle": "Site & Asset Configuration",
+        "description": "Structured UI for defining facilities, hierarchies, devices, and parameters used across EMS modules.",
+        "tech": ["React", "TypeScript", "Forms", "Validation", "Vite"]
+      },
+      {
+        "slug": "ems-dashboard",
+        "title": "EMS Operations Dashboard",
+        "subtitle": "Monitoring & KPI Views",
+        "description": "Configurable dashboards with alarms, trends, and KPI cards for control-room style monitoring.",
+        "tech": ["React", "TypeScript", "WebSocket", "Charts", "Tailwind CSS"]
+      },
+      {
+        "slug": "ems-mobile",
+        "title": "EMS Mobile Experience",
+        "subtitle": "Field & On-the-Go Access",
+        "description": "Responsive/mobile-oriented views for alerts, summaries, and essential operator actions outside the control room.",
+        "tech": ["React", "TypeScript", "Responsive UI", "PWA patterns"]
+      },
+      {
+        "slug": "sim-results",
+        "title": "Simulation Results",
+        "subtitle": "Scenario Comparison UI",
+        "description": "Results exploration module for RatioSIM: tables, charts, and exports that help users interpret simulation output.",
+        "tech": ["React", "TypeScript", "Data grids", "Visualization"]
+      },
+      {
+        "slug": "ems-trading",
+        "title": "EMS Trading Module",
+        "subtitle": "Market & Schedule Workflows",
+        "description": "Frontend flows for trading-related data entry, schedules, and review screens integrated with EMS backends.",
+        "tech": ["React", "TypeScript", "Complex forms", "Enterprise UX"]
+      }
+    ],
+    "details": {
+      "ratio-ems": {
+        "title": "Ratio EMS",
+        "subtitle": "Enterprise Energy Management Platform",
+        "overview": "Ratio EMS is a multi-tenant B2B SaaS used by energy teams to supervise assets, respond to alarms, and configure operational views. The frontend coordinates authentication, navigation, and module-specific workspaces under strict role permissions.",
+        "role": "Frontend Developer responsible for core application shell, shared components, real-time views, and cross-module UX consistency.",
+        "highlights": [
+          "Structured the React + TypeScript codebase around feature modules and shared design tokens.",
+          "Integrated WebSocket channels for live SCADA and alarm updates with graceful degradation.",
+          "Delivered bilingual TR/EN interfaces with scalable i18n patterns.",
+          "Optimized bundle size and render performance for data-heavy operator screens."
+        ],
+        "outcome": "A stable EMS client adopted by operators for daily monitoring, with faster feature delivery through reusable UI foundations."
+      },
+      "ratio-sim": {
+        "title": "RatioSIM",
+        "subtitle": "Energy Simulation & Analytics",
+        "overview": "RatioSIM enables users to configure simulations, track runs, and analyze outputs. The UI emphasizes clarity for technical users while supporting executive-friendly summaries.",
+        "role": "Built simulation-facing screens, results navigation, and shared visualization components.",
+        "highlights": [
+          "Implemented scenario setup wizards and run-status feedback with clear error surfacing.",
+          "Designed chart and table views for comparing simulation runs side by side.",
+          "Aligned API contracts with backend teams for paginated and filtered result sets.",
+          "Maintained Vite-based builds with fast local feedback for the product squad."
+        ],
+        "outcome": "Improved time-to-insight for simulation users and a cohesive product surface alongside Ratio EMS."
+      },
+      "ratio-energy": {
+        "title": "Ratio Energy",
+        "subtitle": "Corporate Product Website",
+        "overview": "Public website presenting Ratio Energy’s mission, products, and contact paths for enterprise prospects.",
+        "role": "Contributed to frontend implementation, layout system, and content-driven pages.",
+        "highlights": [
+          "Implemented responsive marketing sections with accessible typography and contrast.",
+          "Connected product CTAs to live Ratio EMS and RatioSIM destinations.",
+          "Kept performance and SEO basics in check for corporate discovery."
+        ],
+        "outcome": "A credible digital front door that reflects the enterprise nature of the underlying SaaS products."
+      },
+      "eyeds": {
+        "title": "Eyeds",
+        "subtitle": "Client Web Presence",
+        "overview": "Corporate website project delivered as a contract engagement with emphasis on brand presentation and lead capture.",
+        "role": "Frontend developer for page templates, responsive layout, and deployment-ready builds.",
+        "highlights": [
+          "Built reusable section components for services and contact.",
+          "Ensured mobile-first layouts and fast initial load.",
+          "Collaborated on content structure and visual hierarchy."
+        ],
+        "outcome": "Launched a maintainable marketing site that met the client’s positioning goals."
+      },
+      "ems-scada-editor": {
+        "title": "EMS SCADA Editor",
+        "subtitle": "Diagram & Topology Builder",
+        "overview": "Specialized editor for creating SCADA diagrams with symbols, connections, and bindings to live tags.",
+        "role": "Led UI implementation for canvas interactions, tooling palettes, and persistence flows.",
+        "highlights": [
+          "Developed drag-and-drop and selection models for diagram elements.",
+          "Synced symbol states with WebSocket telemetry for live visual feedback.",
+          "Handled large diagrams with virtualization and incremental rendering strategies.",
+          "Added undo-friendly editing patterns for operator confidence."
+        ],
+        "outcome": "Operators can author and maintain SCADA views in-product without external drawing tools."
+      },
+      "ems-facility-editor": {
+        "title": "EMS Facility Editor",
+        "subtitle": "Site & Asset Configuration",
+        "overview": "Configuration module for plants, lines, devices, and metadata that downstream EMS features consume.",
+        "role": "Implemented complex forms, trees, and validation-heavy workflows in React + TypeScript.",
+        "highlights": [
+          "Designed hierarchical navigation for facilities and assets.",
+          "Centralized validation schemas shared across create/edit flows.",
+          "Improved bulk-edit patterns for enterprise administrators.",
+          "Reduced user errors with inline guidance and guardrails."
+        ],
+        "outcome": "More reliable master data entry and fewer support issues from misconfigured assets."
+      },
+      "ems-dashboard": {
+        "title": "EMS Operations Dashboard",
+        "subtitle": "Monitoring & KPI Views",
+        "overview": "Dashboard experience combining widgets, trends, and alarm summaries for control-room monitoring.",
+        "role": "Built widget framework, chart integrations, and real-time refresh behavior.",
+        "highlights": [
+          "Composable widget layout with user-specific persistence where supported.",
+          "Live charts fed by WebSocket streams with throttled updates.",
+          "Alarm panels with filtering, acknowledgment UX, and severity cues.",
+          "Dark/light theming consistent with the wider EMS shell."
+        ],
+        "outcome": "Operators spend less time switching tools; critical signals surface in one consolidated view."
+      },
+      "ems-mobile": {
+        "title": "EMS Mobile Experience",
+        "subtitle": "Field & On-the-Go Access",
+        "overview": "Mobile-optimized slices of EMS functionality for alerts and key metrics when users are away from desktop setups.",
+        "role": "Adapted EMS components for smaller viewports and touch interaction patterns.",
+        "highlights": [
+          "Prioritized alert lists and summary cards for quick scanning.",
+          "Tuned touch targets and navigation for one-handed use.",
+          "Reused authentication and API layers from the main EMS client.",
+          "Validated performance on mid-tier mobile hardware."
+        ],
+        "outcome": "Extended operational awareness beyond the control room without a separate native app."
+      },
+      "sim-results": {
+        "title": "Simulation Results",
+        "subtitle": "Scenario Comparison UI",
+        "overview": "Dedicated results area within RatioSIM for exploring tabular and visual outputs after simulation runs complete.",
+        "role": "Owned results listing, detail drill-downs, and export-friendly table views.",
+        "highlights": [
+          "Built filterable grids for large result datasets.",
+          "Linked charts to selected runs and metrics with consistent color encoding.",
+          "Added export hooks for CSV-oriented workflows.",
+          "Clarified empty, loading, and failed-run states."
+        ],
+        "outcome": "Analysts compare scenarios faster with less manual data wrangling."
+      },
+      "ems-trading": {
+        "title": "EMS Trading Module",
+        "subtitle": "Market & Schedule Workflows",
+        "overview": "Module supporting trading-related schedules, submissions, and review within the EMS ecosystem.",
+        "role": "Implemented form-heavy workflows, tables, and status tracking aligned with backend trading services.",
+        "highlights": [
+          "Modeled multi-step forms with validation and draft-friendly UX.",
+          "Surfaced audit-friendly status timelines for submissions.",
+          "Integrated role-based visibilities for sensitive trading actions.",
+          "Kept terminology consistent with domain experts’ language."
+        ],
+        "outcome": "Trading teams interact with schedules and data through a governed UI instead of ad-hoc spreadsheets."
+      }
+    }
+  },
+  "contact": {
+    "label": "04 — CONTACT",
+    "title": "Let's Build Your",
+    "titleHighlight": "Next Energy UI",
+    "subtitle": "Open to full-time, contract, and consulting frontend roles — especially in energy, industrial SaaS, and real-time dashboards.",
+    "startProject": "Start a Conversation",
+    "email": "Email",
+    "phone": "Phone",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "available": "Open to opportunities",
+    "rights": "All rights reserved."
+  },
+  "loading": {
+    "loading": "LOADING...",
+    "ready": "READY"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "select": "Select language",
+    "en": "English",
+    "tr": "Turkish"
+  },
+  "projectCard": {
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "more": "more"
+  },
+  "hireMe": {
+    "title": "Hire Me",
+    "subtitle": "Tell me about your project or role. I typically reply within 1–2 business days.",
+    "close": "Close",
+    "name": "Full name",
+    "namePlaceholder": "Jane Doe",
+    "email": "Work email",
+    "emailPlaceholder": "you@company.com",
+    "subject": "Subject (optional)",
+    "subjectPlaceholder": "Project or role inquiry",
+    "phone": "Phone (optional)",
+    "phonePlaceholder": "+90 5xx xxx xx xx",
+    "company": "Company",
+    "companyPlaceholder": "Your organization",
+    "role": "Your role",
+    "rolePlaceholder": "e.g. Engineering Manager",
+    "projectType": "Engagement type",
+    "projectTypeOptions": {
+      "fullTime": "Full-time",
+      "contract": "Contract",
+      "freelance": "Freelance / project",
+      "consulting": "Consulting"
+    },
+    "budget": "Budget range (optional)",
+    "budgetPlaceholder": "e.g. €5k–15k or competitive",
+    "timeline": "Timeline",
+    "timelinePlaceholder": "e.g. Start in Q3, 3-month engagement",
+    "message": "Message",
+    "messagePlaceholder": "Describe the product, stack, and what you need from a frontend developer…",
+    "attachCv": "I have read your CV on this site",
+    "consent": "I agree to be contacted about this inquiry.",
+    "send": "Send message",
+    "sending": "Sending…",
+    "successTitle": "Message sent",
+    "successMessage": "Thanks for reaching out. I'll get back to you soon.",
+    "errorTitle": "Could not send",
+    "errorMessage": "Something went wrong. Please email me directly or try again later.",
+    "required": "Required",
+    "invalidEmail": "Enter a valid email address"
+  }
+}
