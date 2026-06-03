@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { I18nProvider } from "@/components/i18n-provider"
 import { HireMeProvider } from "@/components/hire-me-provider"
 import { Toaster } from "@/components/ui/sonner"
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <Analytics />
+        <SpeedInsights />
         <I18nProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
             <HireMeProvider>
