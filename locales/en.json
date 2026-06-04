@@ -26,8 +26,8 @@
     "viewWork": "View My Work",
     "downloadCv": "Download CV",
     "chooseCvLanguage": "Choose CV language",
-    "cvEnglish": "EN CV",
-    "cvTurkish": "TR CV",
+    "cvEnglish": "English CV",
+    "cvTurkish": "Turkish CV",
     "stats": {
       "totalExperience": "Years Experience",
       "frontendExperience": "Years Frontend Experience",

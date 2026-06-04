@@ -13,9 +13,9 @@ import { resolveServerLocale } from "@/lib/locale"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Yalçın Haratoğlu — Frontend Developer | Energy & Enterprise SaaS",
+  title: "Yalçın Haratoğlu — Frontend Developer | Civil Engineering & Energy Software",
   description:
-    "Frontend Developer building Ratio EMS and RatioSIM B2B SaaS with React, TypeScript, Vite, WebSocket, and SCADA interfaces for the energy sector.",
+    "Frontend Developer building civil engineering and energy software with React, TypeScript, Vite, WebSocket, and SCADA interfaces for the energy sector.",
   icons: {
     icon: [
       { url: "/favicons/favicon.ico", sizes: "any" },

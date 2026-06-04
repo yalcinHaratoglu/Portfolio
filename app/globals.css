@@ -55,7 +55,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    cursor: none;
   }
 }
 
@@ -162,9 +161,15 @@ html.dark ::-webkit-scrollbar-button:single-button:vertical:increment {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath fill='%239ca3af' d='M0 0h8L4 5z'/%3E%3C/svg%3E");
 }
 
-/* Custom cursor effects */
-body * {
-  cursor: none !important;
+/* Özel imleç yalnızca fare/trackpad (mobil dokunmatik hariç) */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+
+  body * {
+    cursor: none !important;
+  }
 }
 
 /* Text selection */
