@@ -45,7 +45,7 @@ export function AboutWorkspace() {
           </div>
 
           {/* Keyboard */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 -translate-x-8">
+          <div className="absolute bottom-8 left-1/2 -translate-x-[calc(50%+2rem)]">
             <div className="w-24 h-8 bg-gray-800 rounded-lg border border-gray-600 relative">
               <div className="absolute inset-1 grid grid-cols-8 gap-px">
                 {[...Array(24)].map((_, i) => (
@@ -56,7 +56,7 @@ export function AboutWorkspace() {
           </div>
 
           {/* Mouse */}
-          <div className="absolute bottom-8 right-1/2 transform translate-x-8">
+          <div className="absolute bottom-8 left-1/2 -translate-x-[calc(50%-2rem)]">
             <div className="w-4 h-6 bg-gray-800 rounded-full border border-gray-600"></div>
           </div>
 
